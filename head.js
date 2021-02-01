@@ -7,9 +7,9 @@ const assertEqual = function(actual, expected) {
 };
 
 
-const head = function(actual){
-  let one = actual[0]
-  return one
+const head = function(actual) {
+  let one = actual[0];
+  return one;
 };
 
 
