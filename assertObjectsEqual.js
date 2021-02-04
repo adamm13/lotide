@@ -33,8 +33,8 @@ const eqArrays = function(arr1, arr2) {
 }
 
 const assertObjectsEqual = function(actual, expected) {
-  const inspect = require('util').inspect;
-  if (eqObjects(actual, expected) === true) {
+  const inspect = require('util').inspect; // added line as per compass request
+  if (eqObjects(actual, expected) === true) { // if the eqObjects function is true pass inspection else return failed.
     console.log(`✅✅✅ Assertion Passed: "${inspect(actual)}" === "${inspect(expected)}"`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: "${inspect(actual)}" !== "${inspect(expected)}"`);
